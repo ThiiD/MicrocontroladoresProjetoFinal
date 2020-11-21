@@ -1,0 +1,6 @@
+<circuit type="simulide_0.4" animate="240" speed="1000000" reactStep="50" noLinAcc="5">
+ 
+PlotterWidget: 
+<item windowModality="0" inputMethodHints="0" minimumSize="" fullScreen="false" minimumHeight="200" frameSize="" autoFillBackground="false" locale="" minimumSizeHint="" windowOpacity="1" modal="false" maximumWidth="1000" MaxVolt="500" height="200" toolTipDuration="-1" itemtype="Plotter" baseSize="" sizeHint="" windowIconText="" updatesEnabled="true" accessibleName="" frameGeometry="" size="" pos="" windowTitle="" Scale="1" maximized="false" windowModified="false" mouseTracking="false" minimized="false" minimumWidth="200" y="0" palette="" focus="false" normalGeometry="" isActiveWindow="true" whatsThis="" layoutDirection="0" Tracks="1" objectName="PlotterWidget" sizeIncrement="" sizePolicy="" childrenRect="" contextMenuPolicy="1" windowFilePath="" windowIcon="" rect="" acceptDrops="false" accessibleDescription="" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" width="200" cursor="" enabled="true" statusTip="" geometry="" focusPolicy="0" maximumSize="" toolTip="" visible="false" x="0" maximumHeight="200" styleSheet="" MinVolt="-500" childrenRegion=""/>
+ 
+</circuit>
