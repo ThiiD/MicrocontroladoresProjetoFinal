@@ -24,6 +24,7 @@ Data Stack size         : 256
 #include <delay.h>
 // Alphanumeric LCD functions
 #include <alcd.h>
+#include <stdio.h>
 
 // Declare your global variables here
 char flagPedestre=0;
@@ -47,9 +48,13 @@ interrupt [EXT_INT0] void ext_int0_isr(void)
     PORTB.3 = 0;
     PORTB.4 = 1;
     delay_ms(2000);
-    PORTB.2 = 0;
+    PORTB.2 = 1;
     PORTB.4 = 0;
+    PORTB.5 = 1;
     delay_ms(2000);
+    PORTB.2 = 0;
+    PORTB.0 = 1;
+    PORTB.5 = 1;
 }
 
 // External Interrupt 1 service routine
@@ -69,7 +74,8 @@ interrupt [EXT_INT2] void ext_int2_isr(void)
 void main(void)
 {
 // Declare your local variables here
-
+char paginaInicial[33];
+int contador1=0, contador2=0, contador3=0, contador4=0, contadorMenu = 0;
 // Input/Output Ports initialization
 // Port A initialization
 // Function: Bit7=In Bit6=In Bit5=In Bit4=In Bit3=In Bit2=In Bit1=In Bit0=In 
@@ -81,7 +87,7 @@ PORTA=(0<<PORTA7) | (0<<PORTA6) | (0<<PORTA5) | (0<<PORTA4) | (0<<PORTA3) | (0<<
 // Function: Bit7=In Bit6=In Bit5=In Bit4=In Bit3=In Bit2=In Bit1=In Bit0=In 
 DDRB=(0<<DDB7) | (1<<DDB6) | (1<<DDB5) | (1<<DDB4) | (1<<DDB3) | (1<<DDB2) | (1<<DDB1) | (1<<DDB0);
 // State: Bit7=T Bit6=T Bit5=T Bit4=T Bit3=T Bit2=T Bit1=T Bit0=T 
-PORTB=(0<<PORTB7) | (0<<PORTB6) | (0<<PORTB5) | (0<<PORTB4) | (0<<PORTB3) | (0<<PORTB2) | (0<<PORTB1) | (0<<PORTB0);;
+PORTB=(0<<PORTB7) | (1<<PORTB6) | (1<<PORTB5) | (0<<PORTB4) | (0<<PORTB3) | (0<<PORTB2) | (0<<PORTB1) | (1<<PORTB0);;
 
 // Port C initialization
 // Function: Bit7=In Bit6=In Bit5=In Bit4=In Bit3=In Bit2=In Bit1=In Bit0=In 
@@ -180,28 +186,146 @@ TWCR=(0<<TWEA) | (0<<TWSTA) | (0<<TWSTO) | (0<<TWEN) | (0<<TWIE);
 // Alphanumeric LCD initialization
 // Connections are specified in the
 // Project|Configure|C Compiler|Libraries|Alphanumeric LCD menu:
-// RS - PORTA Bit 0
-// RD - PORTA Bit 1
-// EN - PORTA Bit 2
-// D4 - PORTA Bit 4
-// D5 - PORTA Bit 5
-// D6 - PORTA Bit 6
-// D7 - PORTA Bit 7
+// RS - PORTC Bit 0
+// RD - PORTC Bit 1
+// EN - PORTC Bit 2
+// D4 - PORTC Bit 4
+// D5 - PORTC Bit 5
+// D6 - PORTC Bit 6
+// D7 - PORTC Bit 7
 // Characters/line: 8
-lcd_init(8);
+lcd_init(16);
 
 // Globally enable interrupts
 #asm("sei")
-PORTB.6 = 1;
 while (1)
       {
       // Place your code here
+      // Printa a tela inicial no display
+      sprintf(paginaInicial,"C. de Trafego");
+      lcd_puts(paginaInicial);
+      lcd_gotoxy(0,1);
+      sprintf(paginaInicial,"Senha: ");
+      lcd_puts(paginaInicial);
+      lcd_clear();
       
-      PORTB.0 = 1;
-      PORTB.5 = 1;
-      if (PORTB.7){
-
+      while(PIND.5){
+          if(PIND.3 == 0x0){
+            contador1 = contador1 + 1;
+            delay_ms(200);
+          }
+          if(PIND.4 == 0x0){
+            contador1--;
+            delay_ms(200);
+          }
+      sprintf(paginaInicial,"C. de Trafego");
+      lcd_puts(paginaInicial);
+      lcd_gotoxy(0,1);
+      sprintf(paginaInicial,"Senha: %d",contador1);
+      lcd_puts(paginaInicial);
+      delay_ms(200);
+      lcd_clear();
+              }
+      delay_ms(1000);
+      while(PIND.5){
+          if(PIND.3 == 0x0){
+            contador2++;
+            delay_ms(200);
+          }
+          if(PIND.4 == 0x0){
+            contador2--;
+            delay_ms(200);
+          }
+      sprintf(paginaInicial,"C. de Trafego");
+      lcd_puts(paginaInicial);
+      lcd_gotoxy(0,1);
+      sprintf(paginaInicial,"Senha: %d%d",contador1,contador2);
+      lcd_puts(paginaInicial);
+      delay_ms(200);
+      lcd_clear();
+              }
+      delay_ms(1000);
+      while(PIND.5){
+          if(PIND.3 == 0x0){
+            contador3++;
+            delay_ms(200);
+          }
+          if(PIND.4 == 0x0){
+            contador3--;
+            delay_ms(200);
+          }
+      sprintf(paginaInicial,"C. de Trafego");
+      lcd_puts(paginaInicial);
+      lcd_gotoxy(0,1);
+      sprintf(paginaInicial,"Senha: %d%d%d",contador1,contador2,contador3);
+      lcd_puts(paginaInicial);
+      delay_ms(200);
+      lcd_clear();
+              }
+      delay_ms(1000);
+      while(PIND.5){
+          if(PIND.3 == 0x0){
+            contador4++;
+            delay_ms(200);
+          }
+          if(PIND.4 == 0x0){
+            contador4--;
+            delay_ms(200);
+          }
+      sprintf(paginaInicial,"C. de Trafego");
+      lcd_puts(paginaInicial);
+      lcd_gotoxy(0,1);
+      sprintf(paginaInicial,"Senha: %d%d%d%d",contador1,contador2,contador3,contador4);
+      lcd_puts(paginaInicial);
+      delay_ms(200);
+      lcd_clear();
+              }
+      delay_ms(1000);
+      if(contador1 == 0 && contador2 == 0 && contador3 == 0 && contador4 == 0){
+        sprintf(paginaInicial,"Bem Vindo");
+        lcd_puts(paginaInicial);
+        delay_ms(2000);
+        lcd_clear();
+        while(1){
+            if(contadorMenu == 0){
+                sprintf(paginaInicial,"Desabilitar semaforos");
+                lcd_puts(paginaInicial);
+                delay_ms(200);
+                if(PINB.3 == 0x0)
+                    contadorMenu++;
+                if(PINB.4 == 0x0)
+                    contadorMenu--;
+            }
+            
+            if(contadorMenu == 1){
+                sprintf(paginaInicial,"Alterar timer");
+                lcd_puts(paginaInicial);
+                delay_ms(200);
+                if(PINB.3 == 0x0)
+                    contadorMenu++;
+                if(PINB.4 == 0x0)
+                    contadorMenu--; 
+            }    
+            
+        }
       }
-
+      
+      
+      
+      
+      
+      
+      
+      else{
+        sprintf(paginaInicial,"Senha Incorreta");
+        lcd_puts(paginaInicial);
+        contador1 = 0;
+        contador2 = 0;
+        contador3 = 0;
+        contador4 = 0;
+        delay_ms(1000);
+        lcd_clear();
       }
+      }  
+       
 }

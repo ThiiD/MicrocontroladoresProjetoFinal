@@ -18,11 +18,19 @@ _lcd_maxx                                                                       
 FLASH Allocation [words]
 Function                                                                          Address   Size
 ------------------------------------------------------------------------------------------------
-ext_int0_isr                                                                      0x00069     58
-ext_int1_isr                                                                      0x000A3      1
-ext_int2_isr                                                                      0x000A4      1
-main                                                                              0x000A5     57
-_lcd_write_nibble_G100                                                            0x000DE     21
-_lcd_write_data                                                                   0x000F3     13
-lcd_clear                                                                         0x00100     10
-lcd_init                                                                          0x0010A     43
+ext_int0_isr                                                                      0x000AD     59
+ext_int1_isr                                                                      0x000E8      1
+ext_int2_isr                                                                      0x000E9      1
+main                                                                              0x000EA    258
+_lcd_write_nibble_G100                                                            0x001EC     21
+_lcd_write_data                                                                   0x00201     13
+lcd_gotoxy                                                                        0x0020E     18
+lcd_clear                                                                         0x00220     10
+lcd_putchar                                                                       0x0022A     19
+lcd_puts                                                                          0x0023D     15
+lcd_init                                                                          0x0024C     43
+put_buff_G101                                                                     0x00277     43
+_print_G101                                                                       0x002A2    294
+sprintf                                                                           0x003C8     49
+strlen                                                                            0x003F9     12
+strlenf                                                                           0x00405     13
