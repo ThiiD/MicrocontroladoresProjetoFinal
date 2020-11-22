@@ -20,8 +20,8 @@ Function                                                                        
 ext_int0_isr                                                                      0x00065      1
 ext_int1_isr                                                                      0x00066      1
 ext_int2_isr                                                                      0x00067      1
-main                                                                              0x00068     50
-_lcd_write_nibble_G100                                                            0x0009A     21
-_lcd_write_data                                                                   0x000AF     13
-lcd_clear                                                                         0x000BC     10
-lcd_init                                                                          0x000C6     43
+main                                                                              0x00068     80
+_lcd_write_nibble_G100                                                            0x000B8     21
+_lcd_write_data                                                                   0x000CD     13
+lcd_clear                                                                         0x000DA     10
+lcd_init                                                                          0x000E4     43

@@ -6,7 +6,7 @@
 ;Build configuration    : Debug
 ;Chip type              : ATmega16
 ;Program type           : Application
-;Clock frequency        : 7,994000 MHz
+;Clock frequency        : 14,745600 MHz
 ;Memory model           : Small
 ;Optimize for           : Size
 ;(s)printf features     : int, width
@@ -1262,10 +1262,12 @@ _main:
 ; 0000 003D 
 ; 0000 003E // Port B initialization
 ; 0000 003F // Function: Bit7=In Bit6=In Bit5=In Bit4=In Bit3=In Bit2=In Bit1=In Bit0=In
-; 0000 0040 DDRB=(0<<DDB7) | (0<<DDB6) | (0<<DDB5) | (0<<DDB4) | (0<<DDB3) | (0<<DDB2) | (0<<DDB1) | (0<<DDB0);
+; 0000 0040 DDRB=(0<<DDB7) | (1<<DDB6) | (1<<DDB5) | (1<<DDB4) | (1<<DDB3) | (1<<DDB2) | (1<<DDB1) | (1<<DDB0);
+	LDI  R30,LOW(127)
 	OUT  0x17,R30
 ; 0000 0041 // State: Bit7=T Bit6=T Bit5=T Bit4=T Bit3=T Bit2=T Bit1=T Bit0=T
-; 0000 0042 PORTB=(0<<PORTB7) | (0<<PORTB6) | (0<<PORTB5) | (0<<PORTB4) | (0<<PORTB3) | (0<<PORTB2) | (0<<PORTB1) | (0<<PORTB0);
+; 0000 0042 PORTB=(0<<PORTB7) | (0<<PORTB6) | (0<<PORTB5) | (0<<PORTB4) | (0<<PORTB3) | (0<<PORTB2) | (0<<PORTB1) | (0<<PORTB0);;
+	LDI  R30,LOW(0)
 	OUT  0x18,R30
 ; 0000 0043 
 ; 0000 0044 // Port C initialization
@@ -1353,7 +1355,7 @@ _main:
 ; 0000 0080 // INT1: On
 ; 0000 0081 // INT1 Mode: Rising Edge
 ; 0000 0082 // INT2: On
-; 0000 0083 // INT2 Mode: Falling Edge
+; 0000 0083 // INT2 Mode: Rising Edge
 ; 0000 0084 GICR|=(1<<INT1) | (1<<INT0) | (1<<INT2);
 	IN   R30,0x3B
 	ORI  R30,LOW(0xE0)
@@ -1361,8 +1363,8 @@ _main:
 ; 0000 0085 MCUCR=(1<<ISC11) | (1<<ISC10) | (1<<ISC01) | (1<<ISC00);
 	LDI  R30,LOW(15)
 	OUT  0x35,R30
-; 0000 0086 MCUCSR=(0<<ISC2);
-	LDI  R30,LOW(0)
+; 0000 0086 MCUCSR=(1<<ISC2);
+	LDI  R30,LOW(64)
 	OUT  0x34,R30
 ; 0000 0087 GIFR=(1<<INTF1) | (1<<INTF0) | (1<<INTF2);
 	LDI  R30,LOW(224)
@@ -1420,17 +1422,64 @@ _main:
 ; 0000 00AF // Globally enable interrupts
 ; 0000 00B0 #asm("sei")
 	SEI
-; 0000 00B1 
+; 0000 00B1 PORTB.6 = 1;
+	SBI  0x18,6
 ; 0000 00B2 while (1)
-_0x3:
+_0x5:
 ; 0000 00B3 {
 ; 0000 00B4 // Place your code here
 ; 0000 00B5 
-; 0000 00B6 }
-	RJMP _0x3
-; 0000 00B7 }
-_0x6:
-	RJMP _0x6
+; 0000 00B6 PORTB.0 = 1;
+	SBI  0x18,0
+; 0000 00B7 PORTB.5 = 1;
+	SBI  0x18,5
+; 0000 00B8 if (PORTB.7){
+	SBIS 0x18,7
+	RJMP _0xC
+; 0000 00B9 delay_ms(15000);
+	LDI  R26,LOW(15000)
+	LDI  R27,HIGH(15000)
+	RCALL _delay_ms
+; 0000 00BA PORTB.0 = 0;
+	CBI  0x18,0
+; 0000 00BB PORTB.1 = 1;
+	SBI  0x18,1
+; 0000 00BC delay_ms(2000);
+	LDI  R26,LOW(2000)
+	LDI  R27,HIGH(2000)
+	RCALL _delay_ms
+; 0000 00BD PORTB.1 = 0;
+	CBI  0x18,1
+; 0000 00BE PORTB.2 = 1;
+	SBI  0x18,2
+; 0000 00BF delay_ms(1500);
+	LDI  R26,LOW(1500)
+	LDI  R27,HIGH(1500)
+	RCALL _delay_ms
+; 0000 00C0 PORTB.3 = 1;
+	SBI  0x18,3
+; 0000 00C1 delay_ms(15000);
+	LDI  R26,LOW(15000)
+	LDI  R27,HIGH(15000)
+	RCALL _delay_ms
+; 0000 00C2 PORTB.3 = 0;
+	CBI  0x18,3
+; 0000 00C3 PORTB.4 = 1;
+	SBI  0x18,4
+; 0000 00C4 delay_ms(2000);
+	LDI  R26,LOW(2000)
+	LDI  R27,HIGH(2000)
+	RCALL _delay_ms
+; 0000 00C5 PORTB.5 = 1;
+	SBI  0x18,5
+; 0000 00C6 }
+; 0000 00C7 
+; 0000 00C8 }
+_0xC:
+	RJMP _0x5
+; 0000 00C9 }
+_0x1D:
+	RJMP _0x1D
 ; .FEND
 	#ifndef __SLEEP_DEFINED__
 	#define __SLEEP_DEFINED__
@@ -1458,11 +1507,11 @@ __lcd_write_nibble_G100:
 	ANDI R30,LOW(0xF0)
 	OR   R30,R26
 	OUT  0x1B,R30
-	__DELAY_USB 13
+	__DELAY_USB 25
 	SBI  0x1B,2
-	__DELAY_USB 13
+	__DELAY_USB 25
 	CBI  0x1B,2
-	__DELAY_USB 13
+	__DELAY_USB 25
 	RJMP _0x2080001
 ; .FEND
 __lcd_write_data:
@@ -1475,7 +1524,7 @@ __lcd_write_data:
     st    y,r30
 	LD   R26,Y
 	RCALL __lcd_write_nibble_G100
-	__DELAY_USB 133
+	__DELAY_USB 246
 	ADIW R28,1
 	RET
 ; .FEND
@@ -1520,7 +1569,7 @@ _lcd_init:
 	RCALL SUBOPT_0x1
 	LDI  R26,LOW(32)
 	RCALL __lcd_write_nibble_G100
-	__DELAY_USW 200
+	__DELAY_USW 369
 	LDI  R26,LOW(40)
 	RCALL __lcd_write_data
 	LDI  R26,LOW(4)
@@ -1568,7 +1617,7 @@ SUBOPT_0x0:
 SUBOPT_0x1:
 	LDI  R26,LOW(48)
 	RCALL __lcd_write_nibble_G100
-	__DELAY_USW 200
+	__DELAY_USW 369
 	RET
 
 ;RUNTIME LIBRARY
@@ -1579,7 +1628,7 @@ _delay_ms:
 	breq __delay_ms1
 __delay_ms0:
 	wdr
-	__DELAY_USW 0x7CE
+	__DELAY_USW 0xE66
 	sbiw r26,1
 	brne __delay_ms0
 __delay_ms1:

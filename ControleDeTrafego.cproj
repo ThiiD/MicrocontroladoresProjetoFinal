@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.HPInfoTech.CodeVisionAVR.C</ToolchainName>
-    <ProjectGuid>{0C1DE011-423D-497C-A76A-A46C3F34E8A0}</ProjectGuid>
+    <ProjectGuid>{DD5459AF-423D-497C-A76A-A46C3F34E8A0}</ProjectGuid>
     <avrdevice>ATmega16</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.cof</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>wizard</AssemblyName>
-    <Name>wizard</Name>
-    <RootNamespace>wizard</RootNamespace>
+    <AssemblyName>ControleDeTrafego</AssemblyName>
+    <Name>ControleDeTrafego</Name>
+    <RootNamespace>ControleDeTrafego</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -24,21 +24,21 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
       <CV>
-        <CVProjectPath>"wizard.prj"</CVProjectPath>
+        <CVProjectPath>"ControleDeTrafego.prj"</CVProjectPath>
       </CV>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <CV>
-        <CVProjectPath>"wizard.prj"</CVProjectPath>
+        <CVProjectPath>"ControleDeTrafego.prj"</CVProjectPath>
       </CV>
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="wizard.c">
+    <Compile Include="ControleDeTrafego.c">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
