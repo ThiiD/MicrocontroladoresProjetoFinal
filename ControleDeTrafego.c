@@ -383,73 +383,180 @@ while (1)
                     lcd_puts(paginaInicial);
                     delay_ms(1000);
                     lcd_clear();
+                    sprintf(paginaInicial,"Pedestre - 1");
+                    lcd_puts(paginaInicial);
+                    lcd_gotoxy(0,1);
+                    sprintf(paginaInicial,"Carro - 2");
+                    lcd_puts(paginaInicial);
+                    delay_ms(1500);
+                    lcd_clear();
+                    contador1 = 1;
                     
-                    //Altera o valor das dezenas
+                    //Faz a escolha de pedestre ou carro
                     while(PIND.5 == 0x1){
-                        sprintf(paginaInicial,"Valor dezena: %d",contador1);
+                        sprintf(paginaInicial,"Digite o numero: %d",contador1);
                         lcd_puts(paginaInicial);
                         delay_ms(200);
                         lcd_clear();
-                        if(PIND.6 == 0x0){
-                            break;
-                        }
-                        if(PIND.3 == 0x0){
+                        if (PIND.3 == 0x0){
                             contador1++;
                             delay_ms(200);
                         }
-                        if(PIND.4 == 0x0){
+                        if (PIND.4 == 0x0){
                             contador1--;
                             delay_ms(200);
                         }
-                        
-                        // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
-                        if(contador1 == 4){
-                            contador1 = 0;
+                        // Delimita os limites do contador
+                        if(contador1 == 3){
+                            contador1 = 1;
                         }
-                        if(contador1 == -1){
-                            contador1 = 3;
+                        if(contador1 == 0){
+                            contador1 = 2;
                         }
-                        
                     }
                     delay_ms(200);
-                    // Altera o valor das unidades
-                    while(PIND.5 == 0x1){
-                        sprintf(paginaInicial,"Valor unidades: %d%d",contador1,contador2);
-                        lcd_puts(paginaInicial);
+                    
+                    // Altera timer para pedestres
+                    if(contador1 == 1){
+                        contador1 = 0;
+                        //Altera o valor das dezenas
+                        while(PIND.5 == 0x1){
+                            sprintf(paginaInicial,"Valor dezena: %d",contador1);
+                            lcd_puts(paginaInicial);
+                            delay_ms(200);
+                            lcd_clear();
+                            if(PIND.6 == 0x0){
+                                break;
+                            }
+                            if(PIND.3 == 0x0){
+                                contador1++;
+                                delay_ms(200);
+                            }
+                            if(PIND.4 == 0x0){
+                                contador1--;
+                                delay_ms(200);
+                            }
+                        
+                            // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
+                            if(contador1 == 4){
+                                contador1 = 0;
+                            }
+                            if(contador1 == -1){
+                                contador1 = 3;
+                            }
+                        
+                        }
                         delay_ms(200);
-                        lcd_clear();
-                        if(PIND.6 == 0x0){
-                            break;
-                        }
-                        if(PIND.3 == 0x0){
-                            contador2++;
+                        // Altera o valor das unidades
+                        while(PIND.5 == 0x1){
+                            sprintf(paginaInicial,"Valor unidades: %d%d",contador1,contador2);
+                            lcd_puts(paginaInicial);
                             delay_ms(200);
-                        }
-                        if(PIND.4 == 0x0){
-                            contador2--;
-                            delay_ms(200);
-                        }
+                            lcd_clear();
+                            if(PIND.6 == 0x0){
+                                break;
+                            }
+                            if(PIND.3 == 0x0){
+                                contador2++;
+                                delay_ms(200);
+                            }
+                            if(PIND.4 == 0x0){
+                                contador2--;
+                                delay_ms(200);
+                            }
                         
-                        // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
-                        if(contador2 == 10){
-                            contador2 = 0;
-                        }
-                        if(contador2 == -1){
-                            contador2 = 9;
-                        }
+                            // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
+                            if(contador2 == 10){
+                                contador2 = 0;
+                            }
+                            if(contador2 == -1){
+                                contador2 = 9;
+                            }
                         
-                    }
-                   delay_ms(200);
-                   // Novo valor de timer
-                   tempo = 10*contador1 + contador2;
-                   contador1 = 0;
-                   contador2 = 0;
-                   sprintf(paginaInicial,"Timer = %d s",tempo);
-                   lcd_puts(paginaInicial);
-                   delay_ms(1500);
-                   sprintf(paginaInicial,"Timer alterado com sucesso!");
-                   delay_ms(2000); 
+                        }
+                        delay_ms(200);
+                        // Novo valor de timer
+                        tempoPedestre = 10*contador1 + contador2;
+                        contador1 = 0;
+                        contador2 = 0;
+                        sprintf(paginaInicial,"Timer = %d s",tempoPedestre);
+                        lcd_puts(paginaInicial);
+                        delay_ms(1500);
+                        sprintf(paginaInicial,"Timer alterado com sucesso!");
+                        delay_ms(2000); 
                 }
+                
+                    // Altera timer para Carros
+                    if(contador1 == 2){
+                        contador1 = 0;
+                        //Altera o valor das dezenas
+                        while(PIND.5 == 0x1){
+                            sprintf(paginaInicial,"Valor dezena: %d",contador1);
+                            lcd_puts(paginaInicial);
+                            delay_ms(200);
+                            lcd_clear();
+                            if(PIND.6 == 0x0){
+                                break;
+                            }
+                            if(PIND.3 == 0x0){
+                                contador1++;
+                                delay_ms(200);
+                            }
+                            if(PIND.4 == 0x0){
+                                contador1--;
+                                delay_ms(200);
+                            }
+                        
+                            // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
+                            if(contador1 == 4){
+                                contador1 = 0;
+                            }
+                            if(contador1 == -1){
+                                contador1 = 3;
+                            }
+                        
+                        }
+                        delay_ms(200);
+                        // Altera o valor das unidades
+                        while(PIND.5 == 0x1){
+                            sprintf(paginaInicial,"Valor unidades: %d%d",contador1,contador2);
+                            lcd_puts(paginaInicial);
+                            delay_ms(200);
+                            lcd_clear();
+                            if(PIND.6 == 0x0){
+                                break;
+                            }
+                            if(PIND.3 == 0x0){
+                                contador2++;
+                                delay_ms(200);
+                            }
+                            if(PIND.4 == 0x0){
+                                contador2--;
+                                delay_ms(200);
+                            }
+                        
+                            // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
+                            if(contador2 == 10){
+                                contador2 = 0;
+                            }
+                            if(contador2 == -1){
+                                contador2 = 9;
+                            }
+                        
+                        }
+                        delay_ms(200);
+                        // Novo valor de timer
+                        tempoCarro = 10*contador1 + contador2;
+                        contador1 = 0;
+                        contador2 = 0;
+                        sprintf(paginaInicial,"Timer = %d s",tempoCarro);
+                        lcd_puts(paginaInicial);
+                        delay_ms(1500);
+                        sprintf(paginaInicial,"Timer alterado com sucesso!");
+                        delay_ms(2000); 
+                }
+                    }                    
+
                 if(PIND.3 == 0x0){
                     contadorMenu++;
                     delay_ms(200);

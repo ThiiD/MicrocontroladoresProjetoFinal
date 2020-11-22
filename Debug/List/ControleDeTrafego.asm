@@ -1,5 +1,5 @@
 
-;CodeVisionAVR C Compiler V3.42 Evaluation
+;CodeVisionAVR C Compiler V3.42 
 ;(C) Copyright 1998-2020 Pavel Haiduc, HP InfoTech S.R.L.
 ;http://www.hpinfotech.ro
 
@@ -1153,34 +1153,39 @@ _0x0:
 	.DB  0x65,0x72,0x0,0x4E,0x6F,0x76,0x6F,0x20
 	.DB  0x76,0x61,0x6C,0x6F,0x72,0x20,0x70,0x61
 	.DB  0x72,0x61,0x20,0x74,0x69,0x6D,0x65,0x72
-	.DB  0x0,0x56,0x61,0x6C,0x6F,0x72,0x20,0x64
-	.DB  0x65,0x7A,0x65,0x6E,0x61,0x3A,0x20,0x25
-	.DB  0x64,0x0,0x56,0x61,0x6C,0x6F,0x72,0x20
-	.DB  0x75,0x6E,0x69,0x64,0x61,0x64,0x65,0x73
-	.DB  0x3A,0x20,0x25,0x64,0x25,0x64,0x0,0x54
-	.DB  0x69,0x6D,0x65,0x72,0x20,0x3D,0x20,0x25
-	.DB  0x64,0x20,0x73,0x0,0x54,0x69,0x6D,0x65
-	.DB  0x72,0x20,0x61,0x6C,0x74,0x65,0x72,0x61
-	.DB  0x64,0x6F,0x20,0x63,0x6F,0x6D,0x20,0x73
+	.DB  0x0,0x50,0x65,0x64,0x65,0x73,0x74,0x72
+	.DB  0x65,0x20,0x2D,0x20,0x31,0x0,0x43,0x61
+	.DB  0x72,0x72,0x6F,0x20,0x2D,0x20,0x32,0x0
+	.DB  0x44,0x69,0x67,0x69,0x74,0x65,0x20,0x6F
+	.DB  0x20,0x6E,0x75,0x6D,0x65,0x72,0x6F,0x3A
+	.DB  0x20,0x25,0x64,0x0,0x56,0x61,0x6C,0x6F
+	.DB  0x72,0x20,0x64,0x65,0x7A,0x65,0x6E,0x61
+	.DB  0x3A,0x20,0x25,0x64,0x0,0x56,0x61,0x6C
+	.DB  0x6F,0x72,0x20,0x75,0x6E,0x69,0x64,0x61
+	.DB  0x64,0x65,0x73,0x3A,0x20,0x25,0x64,0x25
+	.DB  0x64,0x0,0x54,0x69,0x6D,0x65,0x72,0x20
+	.DB  0x3D,0x20,0x25,0x64,0x20,0x73,0x0,0x54
+	.DB  0x69,0x6D,0x65,0x72,0x20,0x61,0x6C,0x74
+	.DB  0x65,0x72,0x61,0x64,0x6F,0x20,0x63,0x6F
+	.DB  0x6D,0x20,0x73,0x75,0x63,0x65,0x73,0x73
+	.DB  0x6F,0x21,0x0,0x41,0x6C,0x74,0x65,0x72
+	.DB  0x61,0x72,0x20,0x73,0x65,0x6E,0x68,0x61
+	.DB  0x0,0x50,0x72,0x69,0x6D,0x65,0x69,0x72
+	.DB  0x6F,0x20,0x64,0x69,0x67,0x69,0x74,0x6F
+	.DB  0x3A,0x20,0x0,0x25,0x64,0x25,0x0,0x53
+	.DB  0x65,0x67,0x75,0x6E,0x64,0x6F,0x20,0x64
+	.DB  0x69,0x67,0x69,0x74,0x6F,0x3A,0x0,0x54
+	.DB  0x65,0x72,0x63,0x65,0x69,0x72,0x6F,0x20
+	.DB  0x64,0x69,0x67,0x69,0x74,0x6F,0x3A,0x0
+	.DB  0x51,0x75,0x61,0x72,0x74,0x6F,0x20,0x64
+	.DB  0x69,0x67,0x69,0x74,0x6F,0x3A,0x0,0x4E
+	.DB  0x6F,0x76,0x61,0x20,0x73,0x65,0x6E,0x68
+	.DB  0x61,0x3A,0x20,0x0,0x53,0x65,0x6E,0x68
+	.DB  0x61,0x20,0x61,0x6C,0x74,0x65,0x72,0x61
+	.DB  0x64,0x61,0x20,0x63,0x6F,0x6D,0x20,0x73
 	.DB  0x75,0x63,0x65,0x73,0x73,0x6F,0x21,0x0
-	.DB  0x41,0x6C,0x74,0x65,0x72,0x61,0x72,0x20
-	.DB  0x73,0x65,0x6E,0x68,0x61,0x0,0x50,0x72
-	.DB  0x69,0x6D,0x65,0x69,0x72,0x6F,0x20,0x64
-	.DB  0x69,0x67,0x69,0x74,0x6F,0x3A,0x20,0x0
-	.DB  0x25,0x64,0x25,0x0,0x53,0x65,0x67,0x75
-	.DB  0x6E,0x64,0x6F,0x20,0x64,0x69,0x67,0x69
-	.DB  0x74,0x6F,0x3A,0x0,0x54,0x65,0x72,0x63
-	.DB  0x65,0x69,0x72,0x6F,0x20,0x64,0x69,0x67
-	.DB  0x69,0x74,0x6F,0x3A,0x0,0x51,0x75,0x61
-	.DB  0x72,0x74,0x6F,0x20,0x64,0x69,0x67,0x69
-	.DB  0x74,0x6F,0x3A,0x0,0x4E,0x6F,0x76,0x61
-	.DB  0x20,0x73,0x65,0x6E,0x68,0x61,0x3A,0x20
-	.DB  0x0,0x53,0x65,0x6E,0x68,0x61,0x20,0x61
-	.DB  0x6C,0x74,0x65,0x72,0x61,0x64,0x61,0x20
-	.DB  0x63,0x6F,0x6D,0x20,0x73,0x75,0x63,0x65
-	.DB  0x73,0x73,0x6F,0x21,0x0,0x53,0x65,0x6E
-	.DB  0x68,0x61,0x20,0x49,0x6E,0x63,0x6F,0x72
-	.DB  0x72,0x65,0x74,0x61,0x0
+	.DB  0x53,0x65,0x6E,0x68,0x61,0x20,0x49,0x6E
+	.DB  0x63,0x6F,0x72,0x72,0x65,0x74,0x61,0x0
 _0x2000003:
 	.DB  0x80,0xC0
 
@@ -2059,138 +2064,221 @@ _0x55:
 ; 0000 0180 delay_ms(1000);
 	RCALL SUBOPT_0x19
 ; 0000 0181 lcd_clear();
-; 0000 0182 
-; 0000 0183 //Altera o valor das dezenas
-; 0000 0184 while(PIND.5 == 0x1){
+; 0000 0182 sprintf(paginaInicial,"Pedestre - 1");
+	RCALL SUBOPT_0x2
+	__POINTW1FN _0x0,161
+	RCALL SUBOPT_0x4
+; 0000 0183 lcd_puts(paginaInicial);
+	RCALL SUBOPT_0x1A
+; 0000 0184 lcd_gotoxy(0,1);
+; 0000 0185 sprintf(paginaInicial,"Carro - 2");
+	__POINTW1FN _0x0,174
+	RCALL SUBOPT_0x4
+; 0000 0186 lcd_puts(paginaInicial);
+	RCALL SUBOPT_0x1B
+; 0000 0187 delay_ms(1500);
+; 0000 0188 lcd_clear();
+	RCALL _lcd_clear
+; 0000 0189 contador1 = 1;
+	__GETWRN 16,17,1
+; 0000 018A 
+; 0000 018B //Faz a escolha de pedestre ou carro
+; 0000 018C while(PIND.5 == 0x1){
 _0x63:
 	SBIS 0x10,5
 	RJMP _0x65
-; 0000 0185 sprintf(paginaInicial,"Valor dezena: %d",contador1);
+; 0000 018D sprintf(paginaInicial,"Digite o numero: %d",contador1);
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,161
+	__POINTW1FN _0x0,184
 	RCALL SUBOPT_0x7
 	RCALL SUBOPT_0x8
-; 0000 0186 lcd_puts(paginaInicial);
-; 0000 0187 delay_ms(200);
-; 0000 0188 lcd_clear();
-; 0000 0189 if(PIND.6 == 0x0){
-	SBIS 0x10,6
-; 0000 018A break;
-	RJMP _0x65
-; 0000 018B }
-; 0000 018C if(PIND.3 == 0x0){
+; 0000 018E lcd_puts(paginaInicial);
+; 0000 018F delay_ms(200);
+; 0000 0190 lcd_clear();
+; 0000 0191 if (PIND.3 == 0x0){
 	SBIC 0x10,3
-	RJMP _0x67
-; 0000 018D contador1++;
+	RJMP _0x66
+; 0000 0192 contador1++;
 	RCALL SUBOPT_0x5
-; 0000 018E delay_ms(200);
-; 0000 018F }
-; 0000 0190 if(PIND.4 == 0x0){
-_0x67:
+; 0000 0193 delay_ms(200);
+; 0000 0194 }
+; 0000 0195 if (PIND.4 == 0x0){
+_0x66:
 	SBIC 0x10,4
-	RJMP _0x68
-; 0000 0191 contador1--;
+	RJMP _0x67
+; 0000 0196 contador1--;
 	RCALL SUBOPT_0x6
-; 0000 0192 delay_ms(200);
-; 0000 0193 }
-; 0000 0194 
-; 0000 0195 // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
-; 0000 0196 if(contador1 == 4){
+; 0000 0197 delay_ms(200);
+; 0000 0198 }
+; 0000 0199 // Delimita os limites do contador
+; 0000 019A if(contador1 == 3){
+_0x67:
+	LDI  R30,LOW(3)
+	LDI  R31,HIGH(3)
+	CP   R30,R16
+	CPC  R31,R17
+	BRNE _0x68
+; 0000 019B contador1 = 1;
+	__GETWRN 16,17,1
+; 0000 019C }
+; 0000 019D if(contador1 == 0){
 _0x68:
+	MOV  R0,R16
+	OR   R0,R17
+	BRNE _0x69
+; 0000 019E contador1 = 2;
+	__GETWRN 16,17,2
+; 0000 019F }
+; 0000 01A0 }
+_0x69:
+	RJMP _0x63
+_0x65:
+; 0000 01A1 delay_ms(200);
+	LDI  R26,LOW(200)
+	LDI  R27,0
+	RCALL _delay_ms
+; 0000 01A2 
+; 0000 01A3 // Altera timer para pedestres
+; 0000 01A4 if(contador1 == 1){
+	LDI  R30,LOW(1)
+	LDI  R31,HIGH(1)
+	CP   R30,R16
+	CPC  R31,R17
+	BREQ PC+2
+	RJMP _0x6A
+; 0000 01A5 contador1 = 0;
+	__GETWRN 16,17,0
+; 0000 01A6 //Altera o valor das dezenas
+; 0000 01A7 while(PIND.5 == 0x1){
+_0x6B:
+	SBIS 0x10,5
+	RJMP _0x6D
+; 0000 01A8 sprintf(paginaInicial,"Valor dezena: %d",contador1);
+	RCALL SUBOPT_0x2
+	__POINTW1FN _0x0,204
+	RCALL SUBOPT_0x7
+	RCALL SUBOPT_0x8
+; 0000 01A9 lcd_puts(paginaInicial);
+; 0000 01AA delay_ms(200);
+; 0000 01AB lcd_clear();
+; 0000 01AC if(PIND.6 == 0x0){
+	SBIS 0x10,6
+; 0000 01AD break;
+	RJMP _0x6D
+; 0000 01AE }
+; 0000 01AF if(PIND.3 == 0x0){
+	SBIC 0x10,3
+	RJMP _0x6F
+; 0000 01B0 contador1++;
+	RCALL SUBOPT_0x5
+; 0000 01B1 delay_ms(200);
+; 0000 01B2 }
+; 0000 01B3 if(PIND.4 == 0x0){
+_0x6F:
+	SBIC 0x10,4
+	RJMP _0x70
+; 0000 01B4 contador1--;
+	RCALL SUBOPT_0x6
+; 0000 01B5 delay_ms(200);
+; 0000 01B6 }
+; 0000 01B7 
+; 0000 01B8 // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
+; 0000 01B9 if(contador1 == 4){
+_0x70:
 	LDI  R30,LOW(4)
 	LDI  R31,HIGH(4)
 	CP   R30,R16
 	CPC  R31,R17
-	BRNE _0x69
-; 0000 0197 contador1 = 0;
+	BRNE _0x71
+; 0000 01BA contador1 = 0;
 	__GETWRN 16,17,0
-; 0000 0198 }
-; 0000 0199 if(contador1 == -1){
-_0x69:
+; 0000 01BB }
+; 0000 01BC if(contador1 == -1){
+_0x71:
 	LDI  R30,LOW(65535)
 	LDI  R31,HIGH(65535)
 	CP   R30,R16
 	CPC  R31,R17
-	BRNE _0x6A
-; 0000 019A contador1 = 3;
+	BRNE _0x72
+; 0000 01BD contador1 = 3;
 	__GETWRN 16,17,3
-; 0000 019B }
-; 0000 019C 
-; 0000 019D }
-_0x6A:
-	RJMP _0x63
-_0x65:
-; 0000 019E delay_ms(200);
+; 0000 01BE }
+; 0000 01BF 
+; 0000 01C0 }
+_0x72:
+	RJMP _0x6B
+_0x6D:
+; 0000 01C1 delay_ms(200);
 	LDI  R26,LOW(200)
 	LDI  R27,0
 	RCALL _delay_ms
-; 0000 019F // Altera o valor das unidades
-; 0000 01A0 while(PIND.5 == 0x1){
-_0x6B:
+; 0000 01C2 // Altera o valor das unidades
+; 0000 01C3 while(PIND.5 == 0x1){
+_0x73:
 	SBIS 0x10,5
-	RJMP _0x6D
-; 0000 01A1 sprintf(paginaInicial,"Valor unidades: %d%d",contador1,contador2);
+	RJMP _0x75
+; 0000 01C4 sprintf(paginaInicial,"Valor unidades: %d%d",contador1,contador2);
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,178
+	__POINTW1FN _0x0,221
 	RCALL SUBOPT_0x7
 	RCALL SUBOPT_0xB
 	RCALL SUBOPT_0xC
-; 0000 01A2 lcd_puts(paginaInicial);
-; 0000 01A3 delay_ms(200);
-; 0000 01A4 lcd_clear();
-; 0000 01A5 if(PIND.6 == 0x0){
+; 0000 01C5 lcd_puts(paginaInicial);
+; 0000 01C6 delay_ms(200);
+; 0000 01C7 lcd_clear();
+; 0000 01C8 if(PIND.6 == 0x0){
 	SBIS 0x10,6
-; 0000 01A6 break;
-	RJMP _0x6D
-; 0000 01A7 }
-; 0000 01A8 if(PIND.3 == 0x0){
+; 0000 01C9 break;
+	RJMP _0x75
+; 0000 01CA }
+; 0000 01CB if(PIND.3 == 0x0){
 	SBIC 0x10,3
-	RJMP _0x6F
-; 0000 01A9 contador2++;
+	RJMP _0x77
+; 0000 01CC contador2++;
 	RCALL SUBOPT_0x9
-; 0000 01AA delay_ms(200);
-; 0000 01AB }
-; 0000 01AC if(PIND.4 == 0x0){
-_0x6F:
+; 0000 01CD delay_ms(200);
+; 0000 01CE }
+; 0000 01CF if(PIND.4 == 0x0){
+_0x77:
 	SBIC 0x10,4
-	RJMP _0x70
-; 0000 01AD contador2--;
+	RJMP _0x78
+; 0000 01D0 contador2--;
 	RCALL SUBOPT_0xA
-; 0000 01AE delay_ms(200);
-; 0000 01AF }
-; 0000 01B0 
-; 0000 01B1 // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
-; 0000 01B2 if(contador2 == 10){
-_0x70:
+; 0000 01D1 delay_ms(200);
+; 0000 01D2 }
+; 0000 01D3 
+; 0000 01D4 // Delimita os valores da nossa dezena de acordo com o projeto do nosso circuito.
+; 0000 01D5 if(contador2 == 10){
+_0x78:
 	LDI  R30,LOW(10)
 	LDI  R31,HIGH(10)
 	CP   R30,R18
 	CPC  R31,R19
-	BRNE _0x71
-; 0000 01B3 contador2 = 0;
+	BRNE _0x79
+; 0000 01D6 contador2 = 0;
 	__GETWRN 18,19,0
-; 0000 01B4 }
-; 0000 01B5 if(contador2 == -1){
-_0x71:
+; 0000 01D7 }
+; 0000 01D8 if(contador2 == -1){
+_0x79:
 	LDI  R30,LOW(65535)
 	LDI  R31,HIGH(65535)
 	CP   R30,R18
 	CPC  R31,R19
-	BRNE _0x72
-; 0000 01B6 contador2 = 9;
+	BRNE _0x7A
+; 0000 01D9 contador2 = 9;
 	__GETWRN 18,19,9
-; 0000 01B7 }
-; 0000 01B8 
-; 0000 01B9 }
-_0x72:
-	RJMP _0x6B
-_0x6D:
-; 0000 01BA delay_ms(200);
+; 0000 01DA }
+; 0000 01DB 
+; 0000 01DC }
+_0x7A:
+	RJMP _0x73
+_0x75:
+; 0000 01DD delay_ms(200);
 	LDI  R26,LOW(200)
 	LDI  R27,0
 	RCALL _delay_ms
-; 0000 01BB // Novo valor de timer
-; 0000 01BC tempo = 10*contador1 + contador2;
+; 0000 01DE // Novo valor de timer
+; 0000 01DF tempo = 10*contador1 + contador2;
 	MOVW R30,R16
 	LDI  R26,LOW(10)
 	LDI  R27,HIGH(10)
@@ -2198,13 +2286,13 @@ _0x6D:
 	ADD  R30,R18
 	ADC  R31,R19
 	MOVW R6,R30
-; 0000 01BD contador1 = 0;
+; 0000 01E0 contador1 = 0;
 	__GETWRN 16,17,0
-; 0000 01BE contador2 = 0;
+; 0000 01E1 contador2 = 0;
 	__GETWRN 18,19,0
-; 0000 01BF sprintf(paginaInicial,"Timer = %d s",tempo);
+; 0000 01E2 sprintf(paginaInicial,"Timer = %d s",tempo);
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,199
+	__POINTW1FN _0x0,242
 	ST   -Y,R31
 	ST   -Y,R30
 	MOVW R30,R6
@@ -2213,289 +2301,292 @@ _0x6D:
 	LDI  R24,4
 	RCALL _sprintf
 	ADIW R28,8
-; 0000 01C0 lcd_puts(paginaInicial);
-	RCALL SUBOPT_0x1A
-; 0000 01C1 delay_ms(1500);
-; 0000 01C2 sprintf(paginaInicial,"Timer alterado com sucesso!");
+; 0000 01E3 lcd_puts(paginaInicial);
+	RCALL SUBOPT_0x1B
+; 0000 01E4 delay_ms(1500);
+; 0000 01E5 sprintf(paginaInicial,"Timer alterado com sucesso!");
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,212
+	__POINTW1FN _0x0,255
 	RCALL SUBOPT_0x4
-; 0000 01C3 delay_ms(2000);
+; 0000 01E6 delay_ms(2000);
 	LDI  R26,LOW(2000)
 	LDI  R27,HIGH(2000)
 	RCALL _delay_ms
-; 0000 01C4 }
-; 0000 01C5 if(PIND.3 == 0x0){
+; 0000 01E7 }
+; 0000 01E8 }
+_0x6A:
+; 0000 01E9 
+; 0000 01EA if(PIND.3 == 0x0){
 _0x62:
 	SBIC 0x10,3
-	RJMP _0x73
-; 0000 01C6 contadorMenu++;
+	RJMP _0x7B
+; 0000 01EB contadorMenu++;
 	RCALL SUBOPT_0x17
-; 0000 01C7 delay_ms(200);
-; 0000 01C8 }
-; 0000 01C9 if(PIND.4 == 0x0){
-_0x73:
+; 0000 01EC delay_ms(200);
+; 0000 01ED }
+; 0000 01EE if(PIND.4 == 0x0){
+_0x7B:
 	SBIC 0x10,4
-	RJMP _0x74
-; 0000 01CA contadorMenu--;
+	RJMP _0x7C
+; 0000 01EF contadorMenu--;
 	RCALL SUBOPT_0x18
-; 0000 01CB delay_ms(200);
-; 0000 01CC }
-; 0000 01CD }
-_0x74:
-; 0000 01CE 
-; 0000 01CF // Alterar senha
-; 0000 01D0 if(contadorMenu == 3){
+; 0000 01F0 delay_ms(200);
+; 0000 01F1 }
+; 0000 01F2 }
+_0x7C:
+; 0000 01F3 
+; 0000 01F4 // Alterar senha
+; 0000 01F5 if(contadorMenu == 3){
 _0x61:
 	LDD  R26,Y+8
 	LDD  R27,Y+8+1
 	SBIW R26,3
 	BREQ PC+2
-	RJMP _0x75
-; 0000 01D1 sprintf(paginaInicial,"Alterar senha");
+	RJMP _0x7D
+; 0000 01F6 sprintf(paginaInicial,"Alterar senha");
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,240
+	__POINTW1FN _0x0,283
 	RCALL SUBOPT_0x4
-; 0000 01D2 lcd_puts(paginaInicial);
+; 0000 01F7 lcd_puts(paginaInicial);
 	RCALL SUBOPT_0x16
-; 0000 01D3 delay_ms(200);
-; 0000 01D4 lcd_clear();
-; 0000 01D5 
-; 0000 01D6 // Confirma o desejo de mudar a senha
-; 0000 01D7 if(PIND.5 == 0x0){
+; 0000 01F8 delay_ms(200);
+; 0000 01F9 lcd_clear();
+; 0000 01FA 
+; 0000 01FB // Confirma o desejo de mudar a senha
+; 0000 01FC if(PIND.5 == 0x0){
 	SBIC 0x10,5
-	RJMP _0x76
-; 0000 01D8 delay_ms(500);
+	RJMP _0x7E
+; 0000 01FD delay_ms(500);
 	LDI  R26,LOW(500)
 	LDI  R27,HIGH(500)
 	RCALL _delay_ms
-; 0000 01D9 
-; 0000 01DA // Altera o Primeiro Digito da Senha
-; 0000 01DB while(PIND.5 == 0x1){
-_0x77:
+; 0000 01FE 
+; 0000 01FF // Altera o Primeiro Digito da Senha
+; 0000 0200 while(PIND.5 == 0x1){
+_0x7F:
 	SBIS 0x10,5
-	RJMP _0x79
-; 0000 01DC sprintf(paginaInicial,"Primeiro digito: ");
+	RJMP _0x81
+; 0000 0201 sprintf(paginaInicial,"Primeiro digito: ");
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,254
+	__POINTW1FN _0x0,297
 	RCALL SUBOPT_0x4
-; 0000 01DD lcd_puts(paginaInicial);
-	RCALL SUBOPT_0x1B
-; 0000 01DE lcd_gotoxy(0,1);
-; 0000 01DF sprintf(paginaInicial,"%d%",contador1);
-	__POINTW1FN _0x0,272
+; 0000 0202 lcd_puts(paginaInicial);
+	RCALL SUBOPT_0x1A
+; 0000 0203 lcd_gotoxy(0,1);
+; 0000 0204 sprintf(paginaInicial,"%d%",contador1);
+	__POINTW1FN _0x0,315
 	RCALL SUBOPT_0x7
 	RCALL SUBOPT_0x8
-; 0000 01E0 lcd_puts(paginaInicial);
-; 0000 01E1 delay_ms(200);
-; 0000 01E2 lcd_clear();
-; 0000 01E3 if(PIND.6 == 0x0){
+; 0000 0205 lcd_puts(paginaInicial);
+; 0000 0206 delay_ms(200);
+; 0000 0207 lcd_clear();
+; 0000 0208 if(PIND.6 == 0x0){
 	SBIS 0x10,6
-; 0000 01E4 break;
-	RJMP _0x79
-; 0000 01E5 }
-; 0000 01E6 if(PIND.3 == 0x0){
+; 0000 0209 break;
+	RJMP _0x81
+; 0000 020A }
+; 0000 020B if(PIND.3 == 0x0){
 	SBIC 0x10,3
-	RJMP _0x7B
-; 0000 01E7 contador1++;
+	RJMP _0x83
+; 0000 020C contador1++;
 	RCALL SUBOPT_0x5
-; 0000 01E8 delay_ms(200);
-; 0000 01E9 }
-; 0000 01EA if(PIND.4 == 0x0){
-_0x7B:
+; 0000 020D delay_ms(200);
+; 0000 020E }
+; 0000 020F if(PIND.4 == 0x0){
+_0x83:
 	SBIC 0x10,4
-	RJMP _0x7C
-; 0000 01EB contador1--;
+	RJMP _0x84
+; 0000 0210 contador1--;
 	RCALL SUBOPT_0x6
-; 0000 01EC delay_ms(200);
-; 0000 01ED }
-; 0000 01EE }
-_0x7C:
-	RJMP _0x77
-_0x79:
-; 0000 01EF senha[0] = contador1;
+; 0000 0211 delay_ms(200);
+; 0000 0212 }
+; 0000 0213 }
+_0x84:
+	RJMP _0x7F
+_0x81:
+; 0000 0214 senha[0] = contador1;
 	__PUTWSR 16,17,0
-; 0000 01F0 delay_ms(200);
+; 0000 0215 delay_ms(200);
 	LDI  R26,LOW(200)
 	LDI  R27,0
 	RCALL _delay_ms
-; 0000 01F1 
-; 0000 01F2 // Altera o Segundo Digito da Senha
-; 0000 01F3 while(PIND.5 == 0x1){
-_0x7D:
+; 0000 0216 
+; 0000 0217 // Altera o Segundo Digito da Senha
+; 0000 0218 while(PIND.5 == 0x1){
+_0x85:
 	SBIS 0x10,5
-	RJMP _0x7F
-; 0000 01F4 sprintf(paginaInicial,"Segundo digito:");
+	RJMP _0x87
+; 0000 0219 sprintf(paginaInicial,"Segundo digito:");
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,276
+	__POINTW1FN _0x0,319
 	RCALL SUBOPT_0x4
-; 0000 01F5 lcd_puts(paginaInicial);
-	RCALL SUBOPT_0x1B
-; 0000 01F6 lcd_gotoxy(0,1);
-; 0000 01F7 sprintf(paginaInicial,"%d%d",contador1,contador2);
+; 0000 021A lcd_puts(paginaInicial);
+	RCALL SUBOPT_0x1A
+; 0000 021B lcd_gotoxy(0,1);
+; 0000 021C sprintf(paginaInicial,"%d%d",contador1,contador2);
 	__POINTW1FN _0x0,39
 	RCALL SUBOPT_0x7
 	RCALL SUBOPT_0xB
 	RCALL SUBOPT_0xC
-; 0000 01F8 lcd_puts(paginaInicial);
-; 0000 01F9 delay_ms(200);
-; 0000 01FA lcd_clear();
-; 0000 01FB if(PIND.6 == 0x0){
+; 0000 021D lcd_puts(paginaInicial);
+; 0000 021E delay_ms(200);
+; 0000 021F lcd_clear();
+; 0000 0220 if(PIND.6 == 0x0){
 	SBIS 0x10,6
-; 0000 01FC break;
-	RJMP _0x7F
-; 0000 01FD }
-; 0000 01FE if(PIND.3 == 0x0){
+; 0000 0221 break;
+	RJMP _0x87
+; 0000 0222 }
+; 0000 0223 if(PIND.3 == 0x0){
 	SBIC 0x10,3
-	RJMP _0x81
-; 0000 01FF contador2++;
+	RJMP _0x89
+; 0000 0224 contador2++;
 	RCALL SUBOPT_0x9
-; 0000 0200 delay_ms(200);
-; 0000 0201 }
-; 0000 0202 if(PIND.4 == 0x0){
-_0x81:
+; 0000 0225 delay_ms(200);
+; 0000 0226 }
+; 0000 0227 if(PIND.4 == 0x0){
+_0x89:
 	SBIC 0x10,4
-	RJMP _0x82
-; 0000 0203 contador2--;
+	RJMP _0x8A
+; 0000 0228 contador2--;
 	RCALL SUBOPT_0xA
-; 0000 0204 delay_ms(200);
-; 0000 0205 }
-; 0000 0206 }
-_0x82:
-	RJMP _0x7D
-_0x7F:
-; 0000 0207 senha[1] = contador2;
+; 0000 0229 delay_ms(200);
+; 0000 022A }
+; 0000 022B }
+_0x8A:
+	RJMP _0x85
+_0x87:
+; 0000 022C senha[1] = contador2;
 	MOVW R30,R28
 	ADIW R30,2
 	ST   Z,R18
 	STD  Z+1,R19
-; 0000 0208 delay_ms(200);
+; 0000 022D delay_ms(200);
 	LDI  R26,LOW(200)
 	LDI  R27,0
 	RCALL _delay_ms
-; 0000 0209 
-; 0000 020A // Altera o Terceiro Digito da Senha
-; 0000 020B while(PIND.5 == 0x1){
-_0x83:
+; 0000 022E 
+; 0000 022F // Altera o Terceiro Digito da Senha
+; 0000 0230 while(PIND.5 == 0x1){
+_0x8B:
 	SBIS 0x10,5
-	RJMP _0x85
-; 0000 020C sprintf(paginaInicial,"Terceiro digito:");
+	RJMP _0x8D
+; 0000 0231 sprintf(paginaInicial,"Terceiro digito:");
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,292
+	__POINTW1FN _0x0,335
 	RCALL SUBOPT_0x4
-; 0000 020D lcd_puts(paginaInicial);
-	RCALL SUBOPT_0x1B
-; 0000 020E lcd_gotoxy(0,1);
-; 0000 020F sprintf(paginaInicial,"%d%d%d",contador1,contador2,contador3);
+; 0000 0232 lcd_puts(paginaInicial);
+	RCALL SUBOPT_0x1A
+; 0000 0233 lcd_gotoxy(0,1);
+; 0000 0234 sprintf(paginaInicial,"%d%d%d",contador1,contador2,contador3);
 	__POINTW1FN _0x0,51
 	RCALL SUBOPT_0x7
 	RCALL SUBOPT_0xB
 	RCALL SUBOPT_0xF
 	RCALL SUBOPT_0x10
-; 0000 0210 lcd_puts(paginaInicial);
-; 0000 0211 delay_ms(200);
-; 0000 0212 lcd_clear();
-; 0000 0213 if(PIND.6 == 0x0){
+; 0000 0235 lcd_puts(paginaInicial);
+; 0000 0236 delay_ms(200);
+; 0000 0237 lcd_clear();
+; 0000 0238 if(PIND.6 == 0x0){
 	SBIS 0x10,6
-; 0000 0214 break;
-	RJMP _0x85
-; 0000 0215 }
-; 0000 0216 if(PIND.3 == 0x0){
+; 0000 0239 break;
+	RJMP _0x8D
+; 0000 023A }
+; 0000 023B if(PIND.3 == 0x0){
 	SBIC 0x10,3
-	RJMP _0x87
-; 0000 0217 contador3++;
+	RJMP _0x8F
+; 0000 023C contador3++;
 	RCALL SUBOPT_0xD
-; 0000 0218 delay_ms(200);
-; 0000 0219 }
-; 0000 021A if(PIND.4 == 0x0){
-_0x87:
+; 0000 023D delay_ms(200);
+; 0000 023E }
+; 0000 023F if(PIND.4 == 0x0){
+_0x8F:
 	SBIC 0x10,4
-	RJMP _0x88
-; 0000 021B contador3--;
+	RJMP _0x90
+; 0000 0240 contador3--;
 	RCALL SUBOPT_0xE
-; 0000 021C delay_ms(200);
-; 0000 021D }
-; 0000 021E }
-_0x88:
-	RJMP _0x83
-_0x85:
-; 0000 021F senha[2] = contador3;
+; 0000 0241 delay_ms(200);
+; 0000 0242 }
+; 0000 0243 }
+_0x90:
+	RJMP _0x8B
+_0x8D:
+; 0000 0244 senha[2] = contador3;
 	MOVW R30,R28
 	ADIW R30,4
 	ST   Z,R20
 	STD  Z+1,R21
-; 0000 0220 delay_ms(200);
+; 0000 0245 delay_ms(200);
 	LDI  R26,LOW(200)
 	LDI  R27,0
 	RCALL _delay_ms
-; 0000 0221 
-; 0000 0222 // Altera o Quarto Digito da Senha
-; 0000 0223 while(PIND.5 == 0x1){
-_0x89:
+; 0000 0246 
+; 0000 0247 // Altera o Quarto Digito da Senha
+; 0000 0248 while(PIND.5 == 0x1){
+_0x91:
 	SBIS 0x10,5
-	RJMP _0x8B
-; 0000 0224 sprintf(paginaInicial,"Quarto digito:");
+	RJMP _0x93
+; 0000 0249 sprintf(paginaInicial,"Quarto digito:");
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,309
+	__POINTW1FN _0x0,352
 	RCALL SUBOPT_0x4
-; 0000 0225 lcd_puts(paginaInicial);
-	RCALL SUBOPT_0x1B
-; 0000 0226 lcd_gotoxy(0,1);
-; 0000 0227 sprintf(paginaInicial,"%d%d%d%d",contador1,contador2,contador3,contador4);
+; 0000 024A lcd_puts(paginaInicial);
+	RCALL SUBOPT_0x1A
+; 0000 024B lcd_gotoxy(0,1);
+; 0000 024C sprintf(paginaInicial,"%d%d%d%d",contador1,contador2,contador3,contador4);
 	__POINTW1FN _0x0,65
 	RCALL SUBOPT_0x7
 	RCALL SUBOPT_0xB
 	RCALL SUBOPT_0xF
 	RCALL SUBOPT_0x13
-; 0000 0228 lcd_puts(paginaInicial);
-; 0000 0229 delay_ms(200);
-; 0000 022A lcd_clear();
-; 0000 022B if(PIND.6 == 0x0){
+; 0000 024D lcd_puts(paginaInicial);
+; 0000 024E delay_ms(200);
+; 0000 024F lcd_clear();
+; 0000 0250 if(PIND.6 == 0x0){
 	SBIS 0x10,6
-; 0000 022C break;
-	RJMP _0x8B
-; 0000 022D }
-; 0000 022E if(PIND.3 == 0x0){
+; 0000 0251 break;
+	RJMP _0x93
+; 0000 0252 }
+; 0000 0253 if(PIND.3 == 0x0){
 	SBIC 0x10,3
-	RJMP _0x8D
-; 0000 022F contador4++;
+	RJMP _0x95
+; 0000 0254 contador4++;
 	RCALL SUBOPT_0x11
-; 0000 0230 delay_ms(200);
-; 0000 0231 }
-; 0000 0232 if(PIND.4 == 0x0){
-_0x8D:
+; 0000 0255 delay_ms(200);
+; 0000 0256 }
+; 0000 0257 if(PIND.4 == 0x0){
+_0x95:
 	SBIC 0x10,4
-	RJMP _0x8E
-; 0000 0233 contador4--;
+	RJMP _0x96
+; 0000 0258 contador4--;
 	RCALL SUBOPT_0x12
-; 0000 0234 delay_ms(200);
-; 0000 0235 }
-; 0000 0236 }
-_0x8E:
-	RJMP _0x89
-_0x8B:
-; 0000 0237 senha[3] = contador4;
+; 0000 0259 delay_ms(200);
+; 0000 025A }
+; 0000 025B }
+_0x96:
+	RJMP _0x91
+_0x93:
+; 0000 025C senha[3] = contador4;
 	LDD  R30,Y+10
 	LDD  R31,Y+10+1
 	STD  Y+6,R30
 	STD  Y+6+1,R31
-; 0000 0238 contador1 = 0;
+; 0000 025D contador1 = 0;
 	RCALL SUBOPT_0x1
-; 0000 0239 contador2 = 0;
-; 0000 023A contador3 = 0;
-; 0000 023B contador4 = 0;
+; 0000 025E contador2 = 0;
+; 0000 025F contador3 = 0;
+; 0000 0260 contador4 = 0;
 	LDI  R30,LOW(0)
 	STD  Y+10,R30
 	STD  Y+10+1,R30
-; 0000 023C sprintf(paginaInicial,"Nova senha: ");
+; 0000 0261 sprintf(paginaInicial,"Nova senha: ");
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,324
+	__POINTW1FN _0x0,367
 	RCALL SUBOPT_0x4
-; 0000 023D lcd_puts(paginaInicial);
+; 0000 0262 lcd_puts(paginaInicial);
 	MOVW R26,R28
 	ADIW R26,12
 	RCALL _lcd_puts
-; 0000 023E sprintf(paginaInicial,"%d%d%d%d",senha[0],senha[1],senha[2],senha[3]);
+; 0000 0263 sprintf(paginaInicial,"%d%d%d%d",senha[0],senha[1],senha[2],senha[3]);
 	RCALL SUBOPT_0x2
 	__POINTW1FN _0x0,65
 	ST   -Y,R31
@@ -2519,112 +2610,112 @@ _0x8B:
 	LDI  R24,16
 	RCALL _sprintf
 	ADIW R28,20
-; 0000 023F lcd_gotoxy(0,1);
+; 0000 0264 lcd_gotoxy(0,1);
 	LDI  R30,LOW(0)
 	ST   -Y,R30
 	LDI  R26,LOW(1)
 	RCALL _lcd_gotoxy
-; 0000 0240 lcd_puts(paginaInicial);
-	RCALL SUBOPT_0x1A
-; 0000 0241 delay_ms(1500);
-; 0000 0242 lcd_clear();
+; 0000 0265 lcd_puts(paginaInicial);
+	RCALL SUBOPT_0x1B
+; 0000 0266 delay_ms(1500);
+; 0000 0267 lcd_clear();
 	RCALL _lcd_clear
-; 0000 0243 sprintf(paginaInicial,"Senha alterada com sucesso!");
+; 0000 0268 sprintf(paginaInicial,"Senha alterada com sucesso!");
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,337
+	__POINTW1FN _0x0,380
 	RCALL SUBOPT_0x4
-; 0000 0244 lcd_puts(paginaInicial);
+; 0000 0269 lcd_puts(paginaInicial);
 	MOVW R26,R28
 	ADIW R26,12
 	RCALL SUBOPT_0x15
-; 0000 0245 delay_ms(2000);
-; 0000 0246 lcd_clear();
-; 0000 0247 }
-; 0000 0248 if(PIND.3 == 0x0){
-_0x76:
+; 0000 026A delay_ms(2000);
+; 0000 026B lcd_clear();
+; 0000 026C }
+; 0000 026D if(PIND.3 == 0x0){
+_0x7E:
 	SBIC 0x10,3
-	RJMP _0x8F
-; 0000 0249 contadorMenu++;
+	RJMP _0x97
+; 0000 026E contadorMenu++;
 	RCALL SUBOPT_0x17
-; 0000 024A delay_ms(200);
-; 0000 024B }
-; 0000 024C if(PIND.4 == 0x0){
-_0x8F:
+; 0000 026F delay_ms(200);
+; 0000 0270 }
+; 0000 0271 if(PIND.4 == 0x0){
+_0x97:
 	SBIC 0x10,4
-	RJMP _0x90
-; 0000 024D contadorMenu--;
+	RJMP _0x98
+; 0000 0272 contadorMenu--;
 	RCALL SUBOPT_0x18
-; 0000 024E delay_ms(200);
-; 0000 024F }
-; 0000 0250 }
-_0x90:
-; 0000 0251 
-; 0000 0252 if(contadorMenu == 4){
-_0x75:
+; 0000 0273 delay_ms(200);
+; 0000 0274 }
+; 0000 0275 }
+_0x98:
+; 0000 0276 
+; 0000 0277 if(contadorMenu == 4){
+_0x7D:
 	LDD  R26,Y+8
 	LDD  R27,Y+8+1
 	SBIW R26,4
-	BRNE _0x91
-; 0000 0253 contadorMenu = 0;
+	BRNE _0x99
+; 0000 0278 contadorMenu = 0;
 	LDI  R30,LOW(0)
 	STD  Y+8,R30
 	STD  Y+8+1,R30
-; 0000 0254 }
-; 0000 0255 
-; 0000 0256 if(contadorMenu == -1){
-_0x91:
+; 0000 0279 }
+; 0000 027A 
+; 0000 027B if(contadorMenu == -1){
+_0x99:
 	LDD  R26,Y+8
 	LDD  R27,Y+8+1
 	CPI  R26,LOW(0xFFFF)
 	LDI  R30,HIGH(0xFFFF)
 	CPC  R27,R30
-	BRNE _0x92
-; 0000 0257 contadorMenu = 3;
+	BRNE _0x9A
+; 0000 027C contadorMenu = 3;
 	LDI  R30,LOW(3)
 	LDI  R31,HIGH(3)
 	STD  Y+8,R30
 	STD  Y+8+1,R31
-; 0000 0258 }
-; 0000 0259 
-; 0000 025A }
-_0x92:
+; 0000 027D }
+; 0000 027E 
+; 0000 027F }
+_0x9A:
 	RJMP _0x46
-; 0000 025B }
-; 0000 025C 
-; 0000 025D 
-; 0000 025E 
-; 0000 025F 
-; 0000 0260 
-; 0000 0261 
-; 0000 0262 
-; 0000 0263 else{
+; 0000 0280 }
+; 0000 0281 
+; 0000 0282 
+; 0000 0283 
+; 0000 0284 
+; 0000 0285 
+; 0000 0286 
+; 0000 0287 
+; 0000 0288 else{
 _0x43:
-; 0000 0264 sprintf(paginaInicial,"Senha Incorreta");
+; 0000 0289 sprintf(paginaInicial,"Senha Incorreta");
 	RCALL SUBOPT_0x2
-	__POINTW1FN _0x0,365
+	__POINTW1FN _0x0,408
 	RCALL SUBOPT_0x4
-; 0000 0265 lcd_puts(paginaInicial);
+; 0000 028A lcd_puts(paginaInicial);
 	MOVW R26,R28
 	ADIW R26,12
 	RCALL _lcd_puts
-; 0000 0266 contador1 = 0;
+; 0000 028B contador1 = 0;
 	RCALL SUBOPT_0x1
-; 0000 0267 contador2 = 0;
-; 0000 0268 contador3 = 0;
-; 0000 0269 contador4 = 0;
+; 0000 028C contador2 = 0;
+; 0000 028D contador3 = 0;
+; 0000 028E contador4 = 0;
 	LDI  R30,LOW(0)
 	STD  Y+10,R30
 	STD  Y+10+1,R30
-; 0000 026A delay_ms(1000);
+; 0000 028F delay_ms(1000);
 	RCALL SUBOPT_0x19
-; 0000 026B lcd_clear();
-; 0000 026C }
-; 0000 026D }
+; 0000 0290 lcd_clear();
+; 0000 0291 }
+; 0000 0292 }
 	RJMP _0x2C
-; 0000 026E 
-; 0000 026F }
-_0x94:
-	RJMP _0x94
+; 0000 0293 
+; 0000 0294 }
+_0x9C:
+	RJMP _0x9C
 ; .FEND
 	#ifndef __SLEEP_DEFINED__
 	#define __SLEEP_DEFINED__
@@ -3337,7 +3428,7 @@ SUBOPT_0x1:
 	__GETWRN 20,21,0
 	RET
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 32 TIMES, CODE SIZE REDUCTION:91 WORDS
+;OPTIMIZER ADDED SUBROUTINE, CALLED 35 TIMES, CODE SIZE REDUCTION:100 WORDS
 SUBOPT_0x2:
 	MOVW R30,R28
 	ADIW R30,12
@@ -3362,7 +3453,7 @@ SUBOPT_0x3:
 	RCALL _lcd_gotoxy
 	RJMP SUBOPT_0x2
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 15 TIMES, CODE SIZE REDUCTION:54 WORDS
+;OPTIMIZER ADDED SUBROUTINE, CALLED 17 TIMES, CODE SIZE REDUCTION:62 WORDS
 SUBOPT_0x4:
 	ST   -Y,R31
 	ST   -Y,R30
@@ -3371,21 +3462,21 @@ SUBOPT_0x4:
 	ADIW R28,4
 	RET
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:6 WORDS
+;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:10 WORDS
 SUBOPT_0x5:
 	__ADDWRN 16,17,1
 	LDI  R26,LOW(200)
 	LDI  R27,0
 	RJMP _delay_ms
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:6 WORDS
+;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:10 WORDS
 SUBOPT_0x6:
 	__SUBWRN 16,17,1
 	LDI  R26,LOW(200)
 	LDI  R27,0
 	RJMP _delay_ms
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 10 TIMES, CODE SIZE REDUCTION:43 WORDS
+;OPTIMIZER ADDED SUBROUTINE, CALLED 11 TIMES, CODE SIZE REDUCTION:48 WORDS
 SUBOPT_0x7:
 	ST   -Y,R31
 	ST   -Y,R30
@@ -3394,7 +3485,7 @@ SUBOPT_0x7:
 	RCALL __PUTPARD1
 	RET
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:16 WORDS
+;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:25 WORDS
 SUBOPT_0x8:
 	LDI  R24,4
 	RCALL _sprintf
@@ -3570,17 +3661,8 @@ SUBOPT_0x19:
 	RCALL _delay_ms
 	RJMP _lcd_clear
 
-;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:3 WORDS
+;OPTIMIZER ADDED SUBROUTINE, CALLED 5 TIMES, CODE SIZE REDUCTION:26 WORDS
 SUBOPT_0x1A:
-	MOVW R26,R28
-	ADIW R26,12
-	RCALL _lcd_puts
-	LDI  R26,LOW(1500)
-	LDI  R27,HIGH(1500)
-	RJMP _delay_ms
-
-;OPTIMIZER ADDED SUBROUTINE, CALLED 4 TIMES, CODE SIZE REDUCTION:19 WORDS
-SUBOPT_0x1B:
 	MOVW R26,R28
 	ADIW R26,12
 	RCALL _lcd_puts
@@ -3589,6 +3671,15 @@ SUBOPT_0x1B:
 	LDI  R26,LOW(1)
 	RCALL _lcd_gotoxy
 	RJMP SUBOPT_0x2
+
+;OPTIMIZER ADDED SUBROUTINE, CALLED 3 TIMES, CODE SIZE REDUCTION:8 WORDS
+SUBOPT_0x1B:
+	MOVW R26,R28
+	ADIW R26,12
+	RCALL _lcd_puts
+	LDI  R26,LOW(1500)
+	LDI  R27,HIGH(1500)
+	RJMP _delay_ms
 
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:1 WORDS
 SUBOPT_0x1C:
