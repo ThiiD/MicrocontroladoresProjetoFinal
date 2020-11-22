@@ -1,8 +1,9 @@
-VERSION:3 SOURCE_TIMESTAMP:5175BAE9
+VERSION:3 SOURCE_TIMESTAMP:517603AF
 NODE:I LEVEL:0 LINE:23 "C:\cvavreval\inc\mega16.h"
 NODE:I LEVEL:0 LINE:24 "C:\cvavreval\inc\delay.h"
 NODE:I LEVEL:0 LINE:26 "C:\cvavreval\inc\alcd.h"
+NODE:V LEVEL:0 LINE:29 "flagPedestre -> R5"
 NODE:F LEVEL:0 LINE:31 "ext_int0_isr(void)"
-NODE:F LEVEL:0 LINE:38 "ext_int1_isr(void)"
-NODE:F LEVEL:0 LINE:45 "ext_int2_isr(void)"
-NODE:F LEVEL:0 LINE:51 "main(void)"
+NODE:F LEVEL:0 LINE:59 "ext_int1_isr(void)"
+NODE:F LEVEL:0 LINE:66 "ext_int2_isr(void)"
+NODE:F LEVEL:0 LINE:72 "main(void)"
